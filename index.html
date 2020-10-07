@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gym Membership Calculator</title>
+    <link rel="stylesheet" href=styles.css>
+</head>
+
+<body>
+    <h1>Gym Membership Calculator</h1>
+
+    <section id="input">
+        <h2>Desired Features</h2>
+        <p>
+            <label>
+                Desired Gym
+                <select name="gym_names" id="gym_names">
+                    <option value="None"></option>
+                    <option value="Crunch">Crunch</option>
+                    <option value="24hr">24 HR Fitness</option>
+                    <option value="planet_fitness">Planet Fitness</option>
+                </select>
+            </label>
+        </p>
+
+
+        <p>
+            <label>
+                Guest Pass
+                <select name="guest_pass" id="guest_pass">
+                    <option value="None"></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Monthly/yearly membership
+                <select name="membership" id="membership">
+                    <option value="None"></option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </label>
+        </p>
+    </section>
+    <section id="output">
+        <h2>Your Costs</h2>
+        <p id="selected_gym">Gym Selected: </p>
+        <p id="selected_membership">Monthly dues per year: </p>
+        <p id="selected_guest">Guest pass costs per year: </p>
+        <p id="selected_other_costs">Maintenance costs per year: </p>
+        <p id="totals">Total costs per year: </p>
+    </section>
+    <script src="scripts.js">
+    </script>
+</body>
+
+</html>

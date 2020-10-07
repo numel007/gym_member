@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(123, 51, 52);
+}
+
+h1 {
+    text-decoration: underline;
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+label {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+section#input {
+    border-width: 6px;
+    border-style: outset;
+    border-color: rgb(219, 172, 111);
+    padding: 20px;
+    color: rgb(219, 172, 111);
+    text-shadow: 1px 1px 1px black;
+}
+
+section#output {
+    border-width: 6px;
+    border-style: outset;
+    border-color: rgb(219, 172, 111);
+    padding: 20px;
+    margin: 10px;
+    font-weight: bold;
+    color: rgb(219, 172, 111);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2em;
+}
+
+section#output p {
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}

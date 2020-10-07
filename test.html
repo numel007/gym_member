@@ -1,0 +1,31 @@
+<form id="demo"> 
+    <label><input type="radio" name="guest" value="yes">Yes</label>
+    <label><input type="radio" name="guest" value="no">No</label>
+
+    <p><button type="button" name="getVal">Get Value of Selected</button></p>
+</form>
+
+<script>
+    function getRadioVal(form, name) {
+        var val;
+        var radios_list = document.getElementsByName["guest"];
+
+        for (var i=0, len=radios_list.length; i<len; i++) {
+            if (radios_list[i].checked) {
+                val = radios[i].value;
+                break
+            }
+        }
+        return val;
+    }
+
+    document.forms['demo'].elements['getVal'].onclick = function() {
+    // this (keyword) refers to form to which onsubmit attached
+    // 'ship' is name of radio button group
+    var val = getRadioVal(this, 'guest');
+    console.log("hello")
+    alert(val);
+}
+
+    var val = getRadioVal(document.getElementById('demo'), 'guest')
+</script>
